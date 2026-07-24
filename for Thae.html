@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for Thae"🥹</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            min-height: 100vh; display: flex; justify-content: center; align-items: center; color: #333; overflow: hidden; position: relative;
+        }
+        
+        /* နောက်ခံ ပုံရိပ်ယောင်များ */
+        .bg-image { position: absolute; width: 140px; height: 190px; object-fit: cover; border-radius: 15px; opacity: 0.3; filter: blur(2px); z-index: 0; }
+        .img-1 { top: 5%; left: 8%; transform: rotate(-12deg); }
+        .img-2 { top: 10%; right: 8%; transform: rotate(10deg); }
+        .img-3 { bottom: 8%; left: 10%; transform: rotate(12deg); }
+        .img-4 { bottom: 10%; right: 5%; transform: rotate(-8deg); }
+        .img-5 { top: 48%; left: 4%; transform: translateY(-50%) rotate(6deg); }
+        .img-6 { top: 50%; right: 10%; transform: translateY(-50%) rotate(-6deg); }
+
+        /* Container */
+        .container {
+            width: 92%; max-width: 420px; background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(10px);
+            padding: 25px; border-radius: 20px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); text-align: center; position: relative; z-index: 10;
+            max-height: 90vh; overflow-y: auto;
+        }
+        h2 { margin-bottom: 15px; color: #d63384; font-size: 22px; }
+        p { margin-bottom: 12px; font-size: 15px; line-height: 1.6; color: #444; }
+        input[type="password"] { width: 100%; padding: 12px; margin-bottom: 15px; border: 2px solid #ffb6c1; border-radius: 10px; outline: none; text-align: center; font-size: 16px; }
+        button { width: 100%; background-color: #ff6b81; color: white; border: none; padding: 12px; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.3s; margin-bottom: 10px; }
+        button:hover { background-color: #ff4757; }
+        
+        .section { display: none; }
+        .active { display: block; }
+        
+        /* တောင်းပန်စာ Box */
+        .letter-box { text-align: left; background: #fff0f3; padding: 18px; border-radius: 15px; font-size: 14px; line-height: 1.7; border: 1px solid #ffccd5; }
+        
+        /* Gallery Photo Slide Box */
+        .gallery-box { width: 100%; height: 320px; border-radius: 15px; overflow: hidden; margin-bottom: 20px; border: 4px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
+        .gallery-box img { width: 100%; height: 100%; object-fit: cover; transition: opacity 0.8s ease-in-out; }
+    </style>
+</head>
+<body>
+
+    <!-- Background Photos (Direct Image Links) -->
+    <img src="https://i.ibb.co/V0r4ck4v/1000037555.jpg" class="bg-image img-1">
+    <img src="https://i.ibb.co/cKYf3Zj8/1000037559.jpg" class="bg-image img-2">
+    <img src="https://i.ibb.co/9j8nDTG/1000037560.jpg" class="bg-image img-3">
+    <img src="https://i.ibb.co/R8R0vyf/1000037558.jpg" class="bg-image img-4">
+    <img src="https://i.ibb.co/p6wPWtBt/1000037561.jpg" class="bg-image img-5">
+    <img src="https://i.ibb.co/pvXYGMMw/1000037563.jpg" class="bg-image img-6">
+
+    <div class="container">
+        <!-- 1. Login -->
+        <div id="step-login" class="section active">
+            <h2>🔒 Lobby ၀င်ရန်</h2>
+            <p>ကိုယ်တို့ရဲ့ Anniversary date ထည့်ပါ</p>
+            <input type="password" id="passInput" placeholder="စကားဝှက် ထည့်ရန်...">
+            <button onclick="checkPassword()">၀င်မည် 💕</button>
+        </div>
+
+        <!-- 2. Menu -->
+        <div id="step-menu" class="section">
+            <h2>Welcome, My Love 💕</h2>
+            <button onclick="showSection('step-apology')">✉️ ကိုကို့ရဲ့ စာလွှာလေးဖတ်ရန်</button>
+            <button onclick="showSection('step-gallery')">📸 အမှတ်တရ ဓာတ်ပုံများ ကြည့်ရန်</button>
+        </div>
+
+        <!-- 3. Apology Letter -->
+        <div id="step-apology" class="section">
+            <h2>🥺 တောင်းပန်ပါတယ် သဲသဲရေ</h2>
+            <div class="letter-box">
+                <p>ဝမ်းနည်းအောင် လုပ်မိလို့ တောင်းပန်ပါတယ် သဲသဲရေ... 🥺🤍</p>
+                <p>အသေးမွှားလေး စကားပြောရင်းကနေ ဒီလိုထိ ဖြစ်သွားမယ်လို့ ကိုကို မထင်ထားခဲ့ပါဘူး။ နှစ်ယောက်သား နားလည်မှုလွဲပြီး စကားများသွားကြတာပါ။</p>
+                <p>အမှန်ဆို သဲသဲထင်သလို ကိုကိုလည်း မသန်မာပါဘူး သဲသဲရယ်... ကိုကိုလည်း သဲသဲကို ဝမ်းနည်းအောင် မလုပ်ချင်ပါဘူး။ ဒါပေမဲ့ မကြာခဏ ဝမ်းနည်းအောင် လုပ်မိနေလို့ အများကြီး တောင်းပန်ပါတယ်နော်။</p>
+                <p>ကျေးဇူးပြုပြီး ကိုကိုပြောတာလေးကို သေချာ နားထောင်ပေးပါနော်။ ပြဿနာကြီးရင် ကြီးသလို၊ သေးရင် သေးသလို နှစ်ယောက်တူတူ ညှိယူကြမယ်နော်။ တစ်ခုခုဆိုတာနဲ့ "လမ်းခွဲမယ်/ပြတ်မယ်" ဆိုတဲ့ အကြောင်းတွေကို မပြောပါနဲ့နော်... တင်ထားတာတွေကိုလည်း မဖြတ်ပါရစေနဲ့ဦး။</p>
+                <p>Social Media မှာ ချပြမှပဲ အချစ်စစ်တာ မဟုတ်ပါဘူးနော်။ အဓိကက အပြန်အလှန် နားလည်မှုနဲ့ ရှေ့ဆက်ဖို့ပါပဲ။ ဒီထက်မက ပိုပြီး ချစ်သွားကြမယ်လို့ ကိုကို ကတိပေးပါတယ်။</p>
+                <p style="text-align: center; font-weight: bold; color: #d63384; margin-top: 10px;">
+                    အများကြီး အများကြီး ချစ်တယ်နော် သဲသဲလေး... 🥺🤍<br>
+                    ဒီစာလေး ဖတ်ပြီးရင် စိတ်ဆိုးပြေပေးပါနော်... 🙏🏻🥹
+                </p>
+            </div>
+            <br>
+            <button onclick="showSection('step-menu')">⬅️ နောက်သို့</button>
+        </div>
+
+        <!-- 4. Pure Auto Memory Gallery -->
+        <div id="step-gallery" class="section">
+            <h2>📸 ကိုကိုတို့ရဲ့ အမှတ်တရများ</h2>
+            <div class="gallery-box">
+                <img id="current-photo" src="https://i.ibb.co/V0r4ck4v/1000037555.jpg" alt="Memory Photo">
+            </div>
+            
+            <button onclick="showSection('step-menu')" style="background-color: #6c757d;">⬅️ ပင်မစာမျက်နှာသို့</button>
+        </div>
+    </div>
+
+    <script>
+        const CORRECT_PASSWORD = "1172026"; // Anniversary Password
+
+        // ဓာတ်ပုံစာရင်း (Direct Image Links)
+        const photos = [
+            "https://cdn.phototourl.com/free/2026-07-23-7fb9340c-49bd-47f5-8d84-c278903b82ab.jpg",
+            "https://cdn.phototourl.com/free/2026-07-23-a2a28594-a768-43c3-9af5-0c681e479c45.jpg",
+            "https://cdn.phototourl.com/free/2026-07-23-d1ee7bfb-70b6-4b0b-a47d-11a426097919.jpg",
+            "https://cdn.phototourl.com/free/2026-07-23-fba7e322-f94f-4d93-8e38-093cfd6442ec.jpg",
+            "https://cdn.phototourl.com/free/2026-07-23-32c9da65-fa2e-4ddf-9e5b-77d587cd160b.jpg",
+            "https://cdn.phototourl.com/free/2026-07-23-005a2d35-e663-4ec1-8fe9-26f54d4ce843.jpg",
+            "https://cdn.phototourl.com/free/2026-07-23-6dd2304d-4296-4e84-bf44-693061475bdc.jpg"
+        ];
+        
+        let currentPhotoIndex = 0;
+        let autoSlideTimer = null;
+
+        function checkPassword() {
+            const input = document.getElementById('passInput').value;
+            if (input === CORRECT_PASSWORD) {
+                showSection('step-menu');
+            } else {
+                alert('စကားဝှက် မှားယွင်းနေပါသည်။ ပြန်လည်ကြိုးစားပါ!');
+            }
+        }
+
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+
+            if (sectionId === 'step-gallery') {
+                startAutoSlide();
+            } else {
+                stopAutoSlide();
+            }
+        }
+
+        function changePhoto() {
+            currentPhotoIndex++;
+            if (currentPhotoIndex >= photos.length) {
+                currentPhotoIndex = 0;
+            }
+
+            const imgElement = document.getElementById('current-photo');
+            imgElement.style.opacity = 0;
+
+            setTimeout(() => {
+                imgElement.src = photos[currentPhotoIndex];
+                imgElement.style.opacity = 1;
+            }, 300);
+        }
+
+        function startAutoSlide() {
+            stopAutoSlide();
+            autoSlideTimer = setInterval(changePhoto, 2500);
+        }
+
+        function stopAutoSlide() {
+            if (autoSlideTimer) {
+                clearInterval(autoSlideTimer);
+                autoSlideTimer = null;
+            }
+        }
+    </script>
+</body>
+</html>
